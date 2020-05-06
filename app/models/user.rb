@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :orders
   validates :password, :email, presence: true
   validates :password, length: { minimum: 8 }
   validates :email, format: { with: /([\w\.]+)@([\w\.]+)\.(\w+)/,
