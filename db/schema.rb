@@ -10,7 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_06_071201) do
+ActiveRecord::Schema.define(version: 2020_05_06_080400) do
+
+  create_table "drinks", force: :cascade do |t|
+    t.string "category"
+    t.string "name"
+    t.integer "size"
+    t.integer "price"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "food_orders", force: :cascade do |t|
+    t.integer "food_id"
+    t.integer "drink_id"
+    t.integer "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["drink_id"], name: "index_food_orders_on_drink_id"
+    t.index ["food_id"], name: "index_food_orders_on_food_id"
+  end
+
+  create_table "foods", force: :cascade do |t|
+    t.string "category"
+    t.string "name"
+    t.integer "size"
+    t.integer "price"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "food_order_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["food_order_id"], name: "index_orders_on_food_order_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
