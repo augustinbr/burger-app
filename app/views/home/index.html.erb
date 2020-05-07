@@ -1,3 +1,97 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<%= link_to "sign_in", user_session_path %>
+
+<div class="wrapper">
+  <%= render 'shared/navbar' %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3)">
+    <div class="call">
+      <h3>LIVRAISON GRATUITE</h3>
+      <h4>Nous prenons soins de préparer vos <br> préférées commandes</h4>
+
+      <%= link_to 'COMMANDE', food_index_path %>
+    </div>
+  </div>
+
+  <div class="call-action__wrapper">
+    <div class="call-action__left">
+      <img src="https://res.cloudinary.com/dkpy2yoeq/image/upload/v1588835476/restau-app/burger_lbyodt.png" alt="logo">
+      <h3>REJOIGNEZ BURGER SNACK ET <br> GAGNEZ DES RÉCOMPENCES !</h3>
+    </div>
+
+    <div class="call-action__right">
+
+      <div class="create-acount__button">
+        <%= link_to 'CRÉER UN COMPTE', new_user_session_path %>
+      </div>
+
+      <h1>OU</h1>
+      <div class="call-action__connect">
+        <%= link_to 'SE CONNECTER', user_session_path%>
+        <div class="line"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cards__food">
+    <% @foods.each do |food| %>
+      <%= link_to(food_index_path) do %>
+        <div class="card__food">
+          <div class="card__food-img" style="background-image: url(<%= food.image_url %>);"></div>
+          <h3><%= food.name.upcase %></h3>
+        </div>
+        <% end %>
+      <% end %>
+  </div>
+
+  <div class="promo">
+
+    <div class="promo__card">
+      <div class="promo__card-left">
+        <div>
+          <h1>VOS OBJECTIFS, LES NOTRES</h1>
+          <p>Que vous mangiez
+          Salade, healthy ou que
+          vous suiviez des experts
+          du fitness et leurs régimes
+          pour vous inspirer,
+          nous avons ce qu'il
+          vous faut.</p>
+        </div>
+
+        <div class="promo__link-left">
+          <%= link_to 'COMMANDER', food_index_path %>
+        </div>
+      </div>
+
+      <div class="promo__card-right" style="background-image: url('https://res.cloudinary.com/dkpy2yoeq/image/upload/v1588856680/restau-app/burger-2_jff95a.jpg')">
+      </div>
+
+    </div>
+
+    <div class="promo__card">
+      <div class="promo__card-left">
+        <div>
+          <h1>LA SÉCURITÉ D'ABORD.</h1>
+          <p>Nous prenons déjà des
+          mesures pour assurer la
+          sécurité, comme porter des
+          gants en tout temps,
+          désinfecter régulièrement
+          toutes les surfaces à
+          contact élevé et se laver
+          les mains au moins toutes
+          les heures.</p>
+        </div>
+
+        <div class="promo__link-right">
+          <%= link_to 'COMMANDER', food_index_path %>
+        </div>
+      </div>
+
+      <div class="promo__card-right" style="background-image: url('https://res.cloudinary.com/dkpy2yoeq/image/upload/v1588856680/restau-app/burger-2_jff95a.jpg')">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+
+</div>

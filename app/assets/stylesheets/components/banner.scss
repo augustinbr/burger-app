@@ -1,0 +1,35 @@
+.banner {
+  height: 520px;
+  background-image: url("https://res.cloudinary.com/dkpy2yoeq/image/upload/v1588843117/restau-app/knif_lnsauu.jpg");
+  background-size: 100% 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.call {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.call h3 {
+  text-align: center;
+  color: #CF1718;
+  font-weight: 700;
+  font-size: 50px;
+
+}
+
+.call h4 {
+  text-align: center;
+  color: #441400;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.call a {
+  background-color: #CF1718;
+  padding: 15px 100px;
+  color: white;
+  text-decoration: none;
+}

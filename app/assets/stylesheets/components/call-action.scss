@@ -1,0 +1,56 @@
+.call-action__wrapper {
+  height: 80px;
+  border-bottom: 1px solid gray;
+  display: flex;
+}
+
+.call-action__left {
+  display: flex;
+  align-items: center;
+  margin-left: 350px;
+}
+
+.call-action__left img {
+  height: 50px;
+  width: 50px;
+}
+
+.call-action__left h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.call-action__right {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+
+
+}
+
+.create-acount__button a {
+  border: 1px solid #441400;
+  padding: 5px;
+  color: #441400;
+  text-decoration: none;
+}
+
+.call-action__connect a {
+  color: #B68107;
+  text-decoration: none;
+}
+
+.line {
+  position: relative;
+  left: -6px;
+  width: 115px;
+  border-bottom: 2px solid #B68107;
+  top: -4px;
+}
+
+.call-action__right h1 {
+  color: #441400;
+  font-size: 17px;
+  margin-top: 7px;
+  padding: 0px 34px;
+}
