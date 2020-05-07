@@ -1,0 +1,128 @@
+
+.cards__food {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 10px;
+  width: 1075px;
+  margin: 90px auto;
+  row-gap: 40px;
+}
+
+.card__food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__food-img {
+  width: 302px;
+  height: 172px;
+  background-size: 100% 100%;
+}
+
+.card__food h3 {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Monserrat", sans-serif;
+  padding-top: 10px;
+}
+
+.cards__food a {
+  text-decoration: none;
+  color: #441400;
+}
+
+//////////// cards at the bottom of the footer ////////////
+
+.promo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 1080px;
+  height: 430px;
+  margin: 0 auto;
+}
+
+.promo__card {
+  width: 530px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid #DADADA;
+
+}
+
+.promo__card-left {
+  padding: 15px 18px;
+}
+
+.promo__card-left h1 {
+  color: #441400;
+  font-weight: 700;
+  font-family: "Monserrat", sans-serif;
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.promo__card-left p {
+  color: #441400
+}
+
+.promo__card-right {
+  background-size: cover;
+}
+
+
+.promo__card-left a {
+  background: #441400;
+  color: white;
+  padding: 9px 50px;
+  text-decoration: none;
+}
+
+.promo__link-left {
+  margin-bottom: 1px;
+  position: relative;
+  top: 151px;
+  left: 12px;
+}
+
+.promo__link-right {
+  margin-bottom: 1px;
+  position: relative;
+  bottom: -80px;
+  left: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

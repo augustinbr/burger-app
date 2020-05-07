@@ -1,6 +1,37 @@
 <div class="navbar">
 
   <div class="navbar__left">
+    <div class="logo">
+      <img src="https://res.cloudinary.com/dkpy2yoeq/image/upload/v1588835476/restau-app/burger_lbyodt.png" alt="logo">
+    </div>
+    <div class="user__sign-in">
+      <div class="user__sign-in__icon">
+        <%= fa_icon "fas user 2x" %>
+      </div>
+      <div class="user__sign-in__text">
+        <h6>CONNECT-TOI</h6>
+      </div>
+    </div>
+  </div>
 
+  <div class="navbar__right">
+    <div class="list__action">
+      <ul>
+        <li>COMMANDER</li>
+        <li>NOUS-CONTACTER</li>
+        <li>A PROPOS</li>
+      </ul>
+    </div>
+
+    <div class="find__burger-snack">
+      <div class="link">
+        <%= link_to(food_index_path) do %>
+          <p><%= fa_icon "cutlery" %> | Trouve nous !</p>
+        <% end %>
+      </div>
+      <div class="order">
+        <%= fa_icon "shopping-bag 2x" %>
+      </div>
+    </div>
   </div>
 </div>
