@@ -15,10 +15,10 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import updateNavbar from '../components/nav-bar.js';
+import addOrderToFood from '../components/food-cards.js';
 
 
 document.addEventListener('turbolinks:load', () => {
-
   updateNavbar();
 });
 console.log('Hello World from Webpacker')
