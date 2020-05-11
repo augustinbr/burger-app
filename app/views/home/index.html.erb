@@ -6,7 +6,7 @@
       <h3>LIVRAISON GRATUITE</h3>
       <h4>Nous prenons soins de préparer vos <br> préférées commandes</h4>
 
-      <%= link_to 'COMMANDE', food_index_path %>
+      <%= link_to 'COMMANDE', foods_path %>
     </div>
   </div>
 
@@ -33,10 +33,13 @@
 
   <div class="cards__food">
     <% @foods.each do |food| %>
-      <%= link_to(food_index_path) do %>
+      <%= link_to(foods_path) do %>
         <div class="card__food">
           <div class="card__food-img" style="background-image: url(<%= food.image_url %>);"></div>
           <h3><%= food.name.upcase %></h3>
+          <div id="hide">
+            <p>ORDER <%= fa_icon "arrow-right" %></p>
+          </div>
         </div>
         <% end %>
       <% end %>
@@ -58,7 +61,7 @@
         </div>
 
         <div class="promo__link-left">
-          <%= link_to 'COMMANDER', food_index_path %>
+          <%= link_to 'COMMANDER', foods_path %>
         </div>
       </div>
 
@@ -83,7 +86,7 @@
         </div>
 
         <div class="promo__link-right">
-          <%= link_to 'COMMANDER', food_index_path %>
+          <%= link_to 'COMMANDER', foods_path %>
         </div>
       </div>
 
@@ -92,6 +95,23 @@
     </div>
   </div>
 
-  <div class="footer"></div>
+  <div class="footer">
+    <div class="content">
+      <div class="left">
+        <h3>A PROPOS</h3>
+        <p>Nos valeurs</p>
+        <p>Santé et sécurité</p>
+      </div>
+      <div class="middle">
+        <p>Nouvelles et évènements</p>
+        <p>Nous trouver</p>
+      </div>
+      <div class="right">
+        <h3>CONNECT TOI AVEC NOUS !</h3>
+        <p><%= fa_icon "github 2x" %> <%= fa_icon "instagram 2x" %> <%= fa_icon "linkedin 2x" %></p>
+      </div>
+    </div>
+
+  </div>
 
 </div>
