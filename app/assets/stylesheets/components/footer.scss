@@ -1,4 +1,41 @@
 .footer {
   height: 259px;
   background-color: #441400;
+  margin-top: 50px;
+  color: white;
+
+}
+
+.content {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 135px 200px 250px;
+  grid-template-areas:
+    "left middle right";
+  width: 50%;
+  margin: auto;
+  padding: 82.5px;
+}
+
+.content h3 {
+  font-size: 15px;
+  font-weight: 700
+}
+
+.content p {
+  font-size: 12px;
+}
+
+.left {
+  grid-area: left;
+
+}
+
+.middle {
+  grid-area: middle;
+  padding-top: 28px;
+}
+
+.right {
+  grid-area: right;
 }
