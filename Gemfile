@@ -44,6 +44,14 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem "font-awesome-rails"
 gem 'simple_form'
 
+# Bootstrap
+gem 'bootstrap', '~> 4.4.1'
+gem 'sprockets-rails'
+
+# Jquery
+gem 'jquery-rails'
+
+
 # Cloudinary:
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.12.0'
