@@ -3,7 +3,9 @@
 @import "pages/index.scss";
 @import "components/index.scss";
 
-// External librairies
-// @import "bootstrap/scss/bootstrap";
+
+// External libraries
+@import "bootstrap/scss/bootstrap"; // picks it up in node_modules!
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
