@@ -4,13 +4,16 @@
     <div class="logo">
       <img src="https://res.cloudinary.com/dkpy2yoeq/image/upload/v1588835476/restau-app/burger_lbyodt.png" alt="logo">
     </div>
-    <div class="user__sign-in">
-      <div class="user__sign-in__icon">
-        <%= fa_icon "fas user 2x" %>
-      </div>
-      <div class="user__sign-in__text">
-        <h6>CONNECT-TOI</h6>
-      </div>
+
+      <div class="user__sign-in">
+        <%= link_to(new_user_session_path) do %>
+          <div class="user__sign-in__icon">
+            <%= fa_icon "fas user 2x" %>
+          </div>
+          <div class="user__sign-in__text">
+            <h6>CONNECT-TOI</h6>
+          </div>
+        <% end %>
     </div>
   </div>
 

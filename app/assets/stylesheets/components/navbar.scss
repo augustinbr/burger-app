@@ -25,6 +25,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.user__sign-in a {
+  display: flex;
+  color: #786259;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
 
 .user__sign-in__text {
   padding-left: 13px;
